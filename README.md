@@ -42,7 +42,7 @@ MongoDb data are all located in databaseData folder.
 Execute command below to restore data into mongodb
 
 ```
-mongorestore -d razer /<source code directory>/databaseData/mongoDump
+mongorestore -d razer /<source code directory>/databaseData/mongoDump/razer
 ```
 
 #### Using MongoDB Compass
