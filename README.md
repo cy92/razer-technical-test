@@ -52,7 +52,7 @@ mongorestore -d razer /<source code directory>/databaseData/mongoDump
 
 ### Application (ExpressJs)
 
-    1. In the source code folder (razer-assessment), execute command below to install the package dependency
+    1. In the source code folder, execute command below to install the package dependency
         npm install
 
     2. Copy and rename .env.txt to .env file
