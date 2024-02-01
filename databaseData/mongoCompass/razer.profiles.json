@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "65bbc4eb6561c5087c259b61"
+  },
+  "firstName": "Marion",
+  "lastName": "Ochoa",
+  "dob": "20-08-1990",
+  "race": "Others",
+  "religion": "Christianity",
+  "contact": "012323123",
+  "email": "Marion@Ochoa.com",
+  "addedAt": {
+    "$date": "2024-02-01T16:20:59.225Z"
+  },
+  "addedBy": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bbc693cd23cec0d732f19e"
+  },
+  "firstName": "Ting Guang",
+  "lastName": "Yi",
+  "dob": "10-08-1992",
+  "race": "Chinese",
+  "religion": "Christianity",
+  "contact": "012323123",
+  "email": "Ting@Guang.com",
+  "addedAt": {
+    "$date": "2024-02-01T16:28:03.150Z"
+  },
+  "addedBy": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bbc6f86a7c64dfdbdc4872"
+  },
+  "firstName": "Yongnian",
+  "lastName": "Hu",
+  "dob": "10-08-1992",
+  "race": "Chinese",
+  "religion": "Buddhism",
+  "contact": "012333223",
+  "email": "Hu@Yongnian.com",
+  "addedAt": {
+    "$date": "2024-02-01T16:29:44.388Z"
+  },
+  "addedBy": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bbc74a6a7c64dfdbdc4875"
+  },
+  "firstName": "John",
+  "lastName": "Zuri",
+  "dob": "10-08-1880",
+  "race": "Malay",
+  "religion": "Islam",
+  "contact": "017333223",
+  "email": "angie43@kuppusamy.com",
+  "addedAt": {
+    "$date": "2024-02-01T16:31:06.571Z"
+  },
+  "addedBy": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bbc7736a7c64dfdbdc4878"
+  },
+  "firstName": "Haji Ehza Fareez",
+  "lastName": "Wan Roslee Miskan",
+  "dob": "10-10-1960",
+  "race": "Malay",
+  "religion": "Islam",
+  "contact": "+607-861 1053",
+  "email": "apple.andalis@selvanayagam.com",
+  "addedAt": {
+    "$date": "2024-02-01T16:31:47.503Z"
+  },
+  "addedBy": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65bbc79e6a7c64dfdbdc487b"
+  },
+  "firstName": "Jane",
+  "lastName": "Thum",
+  "dob": "10-10-1990",
+  "race": "Chinese",
+  "religion": "Buddhism",
+  "contact": "+6015-484 9215",
+  "email": "fatehah.mak@hamid.com",
+  "addedAt": {
+    "$date": "2024-02-01T16:32:30.627Z"
+  },
+  "addedBy": "admin",
+  "__v": 0
+}]
