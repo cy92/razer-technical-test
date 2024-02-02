@@ -50,7 +50,9 @@ module.exports = {
         updatedBy: userInfo?.username,
       };
 
-      return await profile.findOneAndUpdate(query, updateData);
+      return await profile.findOneAndUpdate(query, updateData, {
+        new: true,
+      });
     } catch (error) {
       console.log(error);
       throw error;
@@ -61,9 +63,14 @@ module.exports = {
       return await profile.findOneAndUpdate(
         { _id: id },
         {
-          deleted: true,
-          deletedBy: userInfo.username,
-          deletedAt: new Date(),
+          $set: {
+            deleted: true,
+            deletedBy: userInfo.username,
+            deletedAt: new Date(),
+          },
+        },
+        {
+          new: true,
         }
       );
     } catch (error) {

@@ -45,6 +45,7 @@ const editProfileRule = [
     .withMessage("E-mail cannot be empty")
     .isEmail()
     .withMessage("Invalid e-mail"),
+  check("image").optional(),
 ];
 
 module.exports = { addProfileRule, editProfileRule };
