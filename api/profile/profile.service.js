@@ -47,7 +47,7 @@ module.exports = {
       updateData = {
         ...updateData,
         updatedAt: new Date(),
-        updatedBy: userInfo.username,
+        updatedBy: userInfo?.username,
       };
 
       return await profile.findOneAndUpdate(query, updateData);

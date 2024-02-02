@@ -15,7 +15,7 @@ This application allow user
 - To login and generate jwt token
 - Perform Create, Update, Read and Soft delete profile information via api call
 
-** JWT token will required to add into HTTP header Authroization for all profile related api call **
+** JWT token will required to add into HTTP header Authroization for all profile related api call, token current expireation is 1 hours **
 
 ### Additional Library Use and Purpose
 
@@ -28,6 +28,22 @@ This application allow user
 - nodemon: auto refresh when code change use
 
 ** For request validation, rule will be locate in the validation folder inside both profile (profile.request.js) and login (login.request.js) folder **
+
+### API Source Design
+
+All api source are located inside /api folder. Below describe on the usage base on the source code extenstion:
+
+- xxx.service : contain reusable function like database crud related
+- xxx.controller : perform requst and response handling, calling xxx.service to perform data crud
+- xxx.model : schema on the database
+- xxx.request : contain request rule, to be use by express-validator
+
+All utily source will be located in util and below is their usage:
+
+- crypto: jwt generation and aes encryption
+- messageFormat: standardize success and fail message format upon response
+- mongo: connect mongodb function
+- validation: not in use
 
 ## Installation
 

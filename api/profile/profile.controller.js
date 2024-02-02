@@ -48,7 +48,6 @@ router.post("/search", async function (req, res) {
     ...(req?.body?.race && { race: req?.body?.race }),
     ...(req?.body?.religion && { religion: req?.body?.religion }),
     ...(req?.body?.email && { email: req?.body?.email }),
-    deleted: { $ne: true },
   };
   const filter = await profileService.findMany(query);
 
@@ -148,7 +147,8 @@ router.put("/:id", editProfileRule, async function (req, res) {
 
     const updateData = await profileService.updateOne(
       { _id: id },
-      sanitizeData
+      sanitizeData,
+      req?.headers?.userInfo
     );
 
     if (!updateData) res.send(messageFormat.onError("Update profile failed"));
